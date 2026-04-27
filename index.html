@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Design Portfolio - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <header id="hero" class="hero">
+                <h1><span class="hero-greeting">Hi, I'm</span> <span class="hero-name">Zoe Yu</span></h1>
+                <p class="subtitle">University of Toronto Engineering Science 2T9</p>
+            </header>
+
+            <section id="about" class="about about-grid">
+                <div class="about-left">
+                    <h2>About Me</h2>
+                    <p class="about-intro"> <b>I</b> am a first-year Engineering Science student at the University of Toronto with interests in cryptography, quantum chemistry, and the application of machine intelligence in both fields. Outside academics, I love solo backpacking and have travelled independently through Europe and China. On the right is picture of me in Rome, 2025 summer.</p>
+                </div>
+
+                <div class="about-image-wrap">
+                    <img src="./images/aboutme_1.jpg" alt="About Me Image" class="about-image">
+                </div>
+
+                <div class="skills-subsection">
+                    <div class="skills-block languages-block">
+                        <h3>Languages</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag lang-english">English</span>
+                            <span class="skill-tag lang-mandarin">Mandarin</span>
+                            <span class="skill-tag lang-japanese">Japanese</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-block toolkit-block">
+                        <h3>Technical Toolkit</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag tool-python">Python</span>
+                            <span class="skill-tag tool-matlab">MATLAB</span>
+                            <span class="skill-tag tool-c">C</span>
+                            <span class="skill-tag tool-latex">LaTeX</span>
+                            <span class="skill-tag tool-cad">CAD</span>
+                            <span class="skill-tag tool-cad">JavaScript</span>
+                            <span class="skill-tag tool-cad">HTML</span>
+                            <span class="skill-tag tool-cad">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <a class="folder-card" href="positionality.html" aria-label="Positionality in Engineering Design Process">
+                        <div class="folder-tab"></div>
+                        <div class="folder-body">
+                            <h3>Positionality in Engineering Design Process</h3>
+                            <p>View Details</p>
+                            <p>  </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="design-projects" class="design-projects">
+                <h2>Design Projects</h2>
+                <div class="projects-grid">
+                    <div id="praxis1" class="project-card" onclick="window.location.href='praxis1.html'">
+                        <div class="card-header">
+                            <h3>Praxis I Project</h3>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                        <p class="card-description">Designed and prototyped a practical solution using sustainable materials and low-cost manufacturing techniques, balancing functionality, feasibility, and user needs throughout the design process.</p>
+                        <div class="card-meta">
+                            <span class="team-size">Team: 4 members</span>
+                            <span class="duration">Duration: 13 weeks</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">Prototyping</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">Teamwork</span>
+                        </div>
+                    </div>
+
+                    <div id="ewb" class="project-card" onclick="window.location.href='ewb.html'">
+                        <div class="card-header">
+                            <h3>EWB Hackathon Project</h3>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                        <p class="card-description">Designed a browser extension that improves web search by expanding queries across multiple languages and regions. Included content-type filters to help users find more relevant and diverse sources.</p>
+                        <div class="card-meta">
+                            <span class="team-size">Team: 4 members</span>
+                            <span class="duration">Duration: 36 hours</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">web extension development</span>
+                            <span class="tag">API integration</span>
+                            <span class="tag">User research</span>
+                        </div>
+                    </div>
+
+                    <div id="praxis2" class="project-card" onclick="window.location.href='praxis2.html'">
+                        <div class="card-header">
+                            <h3>Praxis II Project</h3>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                        <p class="card-description">Designed and prototyped an assistive filming system for a client with mobility impairments, combining ergonomic hardware, custom controls, and iterative user-centered design to improve accessibility and independence.</p>
+                        <div class="card-meta">
+                            <span class="team-size">Team: 4 members</span>
+                            <span class="duration">Duration: 13 weeks</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">CAD</span>
+                            <span class="tag">3D Printing</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Zoe Yu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

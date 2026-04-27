@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Design Portfolio - EWB Hackathon Project</title>    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+</head>
+<body class="positionality-page project-detail-page ewb-page">
+    <div class="positionality-shell">
+        <header class="project-topbar" aria-label="Project navigation">
+            <div class="topbar-inner">
+                <div class="topbar-brand">Zoe Yu</div>
+                <nav class="topbar-links" aria-label="Project links">
+                    <a href="index.html">Homepage</a>
+                    <a href="positionality.html">Positionality</a>
+                    <a href="index.html#design-projects">Design Projects</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="project-hero-intro" aria-label="Project introduction">
+            <div class="project-hero-inner">
+                <h1>Search Scramble</h1>
+                <p>Browser extension for multilingual, region-based search comparison</p>
+            </div>
+            <p class="project-hero-team"><strong>Team Members:</strong><br>Aadi Aggarwal<br>Thea Perez<br>Teresa Zhu<br>Zoe Yu</p>
+        </section>
+
+        <div class="positionality-layout">
+            <aside class="positionality-sidebar" aria-label="Project sections">
+                <nav class="positionality-nav">
+                    <a href="#overview">Overview</a>
+                    <a href="#decisions">Process & Decision</a>
+                    <a href="#ctmf">CTMF</a>
+                </nav>
+            </aside>
+
+            <article class="positionality-main">
+                <section id="overview" class="positionality-section section-overview">
+                    <h2>Overview</h2>
+                    <p>Search Scramble was a hackathon project created in response to a challenge on <b>McDonaldization and enshittification in digital systems</b>. The goal was to design a tool that could <b>push back against increasing sameness, predictability, and exploitative platform behaviour</b>. We chose to focus on web search, where results often privilege the same kinds of sources, perspectives, and regions, narrowing how users understand a topic. Within the limited time of the hackathon, <b>we designed a browser extension concept that expands user queries across multiple languages and regions and allows filtering by content type, such as news, blogs, research, and tutorials.</b></p>
+                    <img src="./images/EWB_design_intro.png" alt="Search Scramble workflow diagram">
+                    <p>This workflow was designed to help users compare information across languages, regions, and media types more easily. In doing so, the extension aimed to support a broader and more intentional search experience.</p>
+                    <p>Get access to the code: <a href="https://github.com/kxaayam/Multisearch.git" target="_blank" rel="noopener noreferrer">here</a> (own translation and search API is required)</p>
+                </section>
+
+                <section id="decisions" class="positionality-section section-approach">
+                    <h2>Design Process & Key Design Decisions</h2>
+                    <p>Even within the time constraints, our design process still followed <b>an iterative FDCR structure</b>, with most of the work concentrated in the Framing, Diverging, and Converging stages. Although we developed a prototype, it mainly served to communicate the concept, since the project did not progress into formal testing or evaluation </p>
+                    <img src="./images/EWB_Design_Process (1).png" alt="EWB design process diagram">
+                    <p>We began by aligning team values, stakeholder needs, and a shared direction for the project. From there, research and framing helped us move from a broad challenge about enshittification toward a more defined design space. One of the key decisions was to design for <b>feasibility</b>: rather than trying to redesign the entire search system, we focused on the user’s experience of search results. We also decided to <b>design for diversity and user agency</b>, since the extension was intended to help users access a wider range of perspectives across languages, regions, and media types.</p>
+                </section>
+
+                <section id="ctmf" class="positionality-section section-perspective">
+                    <h2>CTMF</h2>
+                    
+                    <h3>1. Scoping</h3>
+                    <p>Scoping is a <b>framing tool</b> used to set the limits of a project. In this case, it helped us decide <b>which parts of the larger system we were prepared to engage with and which we would leave outside the project</b>. Rather than trying to change how search engines rank information, we focused on what could be added around that system through a browser extension. That boundary gave the project a more realistic scale and made later design decisions easier to justify.</p>
+                    <img src="./images/EWB_scoping.png" alt="Scoping diagram">
+                    <p>Scoping helped the project by making the problem manageable within the limited time of the hackathon. Without it, our team could easily have chosen a direction that was too ambitious or too broad to develop meaningfully. I think the main strength of scoping is that it protects the project from becoming unrealistic, while still leaving room for creativity within those boundaries. It also helped our teamwork because it gave us a clearer sense of what we were and were not trying to solve. A limitation, however, is that scoping can sometimes make a project too narrow if the boundaries are set too early or too rigidly. In the future, I would use scoping not just as a way to reduce complexity, but also as a way to consciously justify why certain parts of a system are excluded. That would make my design decisions feel more intentional rather than simply constrained by time.</p>
+
+                    <h3>2. BrainWriting</h3>
+                    <p>Brainwriting is a <b>diverging tool</b> that allows team members to <b>generate ideas individually</b>. Because it is silent and structured, it creates space for equal participation, reduces early groupthink, and supports a broader exploration of possible directions.</p>
+                    <img src="./images/EWB_brainwriting.png" alt="Brainwriting idea generation diagram">
+                    <p>Brainwriting helped the project by generating more ideas than a normal discussion probably would have, especially because our team members came from different disciplines and did not yet know how each other worked. It supported more balanced participation, which I think was important in making the teamwork feel fair and collaborative. One strength of brainwriting is that it allows quieter people or people who need more time to think to still contribute meaningful ideas. It also helped us avoid settling too quickly on the first idea that sounded good. One weakness, though, is that brainwriting produces many raw ideas, but does not by itself help evaluate which ones are strongest or most feasible. That means it works best when followed by a converging tool. In the future, I would interpret brainwriting as most valuable in the early stage of a project when variety matters more than polish. I would also make sure to connect it more clearly to the next stage, so that strong ideas are not lost when the team begins narrowing down options.</p>
+
+                    <h3>3. NGO</h3>
+                    <p>Needs–Goals–Objectives (NGO) was one of the <b>Concepts from Praxis</b> we used in this project. NGO helped structure the problem by separating it into three levels:</p>
+                    <ul>
+                        <li><b>needs</b>: defines the core problem or opportunity</li>
+                        <li><b>goals</b>: describe what the system should do in response</li>
+                        <li><b>objectives</b>: translate those goals into more specific targets that can guide later requirements and evaluation.</li> 
+                    </ul>
+
+                    <p>In the context of the EWB Hackathon, NGO was especially useful because the <b>design space was extremely open</b>. The challenge of McDonaldization and enshittification could have led in many different directions, so it was important to clarify early on what problem we were actually trying to address and what success would look like. In this project, NGO acted as a <b>converging tool</b>: it helped our team narrow a broad theme into a more focused design opportunity, align around a shared understanding of the problem, and move forward with a clearer basis for decision-making. I found it valuable because it turned a vague and highly conceptual prompt into something more structured, discussable, and actionable.</p>
+                    <img src="./images/NGOs-hackathon.png" alt="NGO framework diagram">
+                    <p>Using NGO helped the project by giving our team a shared foundation before we started developing solutions. It made the discussion more focused and reduced the risk of everyone interpreting the challenge differently. I think one strength of NGO is that it turns a vague problem into a structured one, which is especially valuable in a fast-paced project like a hackathon. At the same time, one weakness is that a strong NGO does not automatically lead to a strong prototype. In our case, even though our NGO was relatively solid, we did not carry that same clarity into the features of the extension itself. In future projects, I would interpret NGO not only as a tool for defining the problem, but also as something I should keep referring back to when deciding what must appear in the prototype. That would help ensure that the final design reflects the original objectives more clearly.</p>
+                </section>
+
+              
+            </article>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Zoe Yu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
